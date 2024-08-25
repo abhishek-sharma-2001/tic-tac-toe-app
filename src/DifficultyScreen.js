@@ -1,32 +1,35 @@
+import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
 import React from 'react';
-import { View, Text, Pressable, StyleSheet,Image } from 'react-native';
 
-const HomeScreen = ({ navigation }) => {
+const DifficultyScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-      <Image 
+        <Image 
           source={require('../assets/logo3.png')}
           style={styles.logo}
           resizeMode="contain"
         />
       </View>
       <View style={styles.buttonContainer}>
-        <Pressable style={styles.button} onPress={() => navigation('Game')}>
-          <Text style={styles.buttonText}>Local Multiplayer</Text>
+        <Pressable style={styles.button} onPress={() => navigation('Game', { difficulty: "easy" })}>
+          <Text style={styles.buttonText}>Easy</Text>
         </Pressable>
-        <Pressable style={styles.button} onPress={() => navigation('Difficulty')}>
-          <Text style={styles.buttonText}>VS Computer</Text>
+        <Pressable style={styles.button} onPress={() => navigation('Game', { difficulty: "medium" })}>
+          <Text style={styles.buttonText}>Medium</Text>
         </Pressable>
-        <Pressable style={styles.button} onPress={() => navigation('Game')}>
-          <Text style={styles.buttonText}>Online Multiplayer</Text>
+        <Pressable style={styles.button} onPress={() => navigation('Game', { difficulty: "hard" })}>
+          <Text style={styles.buttonText}>Hard</Text>
+        </Pressable>
+        <Pressable style={styles.button} onPress={() => navigation('Home')}>
+          <Text style={styles.buttonText}>Back</Text>
         </Pressable>
       </View>
     </View>
   );
-};
+}
 
-export default HomeScreen;
+export default DifficultyScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -36,16 +39,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#000028',
   },
   titleContainer: {
-    marginTop: 150, // Adjust this value to move the title further up or down
+    marginTop: 150,
     marginBottom: 32,
   },
-  title: {
-    fontSize: 48,
-    fontWeight: 'bold',
+  logo: {
+    width: 200, // Adjust as necessary
+    height: 200,
   },
   buttonContainer: {
-    alignItems: 'center', // Align buttons in the center horizontally
-    width: '100%', // Make the button container take the full width
+    alignItems: 'center',
+    width: '100%',
   },
   button: {
     width: '80%', 
