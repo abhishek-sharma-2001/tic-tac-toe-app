@@ -48,7 +48,7 @@ A React Native Tic Tac Toe application featuring three modes: Local, Vs Computer
 ## Usage
 
 1. **Local Mode**: Select 'Local' from the main menu to start a game with another player on the same device.
-2. **Vs Computer Mode**: Select 'Vs Comp' to play against the AI. Adjust the difficulty settings if available.
+2. **Vs Computer Mode**: Select 'Vs Computer' to play against the AI. Adjust the difficulty settings.
 3. **Online Mode**: (Coming soon) Select 'Online' to challenge players from around the world. Ensure you have an active internet connection.
 
 ## Development
@@ -79,5 +79,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, please contact [12abhishek10@gmail.com](mailto:your-12abhishek10@gmail.com).
+For any questions or feedback, please contact [12abhishek10@gmail.com](mailto:12abhishek10@gmail.com).
 ```
+
+Let me know if there are any other changes you’d like!
