@@ -1,5 +1,3 @@
-Here’s the entire message formatted as markdown:
-
 ```markdown
 # Tic Tac Toe App
 
