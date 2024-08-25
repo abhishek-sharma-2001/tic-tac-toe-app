@@ -1,7 +1,6 @@
-```markdown
 # Tic Tac Toe App
 
-A React Native Tic Tac Toe application featuring three modes: Local, Vs Computer, and Online. The Online mode is under development. 
+A React Native Tic Tac Toe application featuring three modes: Local, Vs Computer, and Online. The Online mode is under development.
 
 ## Features
 
@@ -80,6 +79,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or feedback, please contact [12abhishek10@gmail.com](mailto:12abhishek10@gmail.com).
-```
-
-Let me know if there are any other changes you’d like!
